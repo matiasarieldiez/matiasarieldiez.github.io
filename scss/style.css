@@ -255,6 +255,8 @@
 }
 .projects__cards--card img {
   margin-bottom: 20px;
+  height: 250px;
+  width: 250px;
 }
 .projects__cards--card p {
   margin-bottom: 20px;

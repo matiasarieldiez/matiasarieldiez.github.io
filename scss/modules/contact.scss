@@ -1,0 +1,70 @@
+@use "./../_partials/devices";
+
+.contact {
+    background-color: blue;
+    color: white;
+    padding: 60px 150px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &__header {
+        margin-bottom: 100px;
+        font-size: 40px;
+        text-align: center;
+        min-width: 300px;
+
+        @include devices.small {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        @include devices.medium {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    &__boxes {
+        min-width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+
+        @include devices.small {
+            font-size: 20px;
+        }
+
+        @include devices.medium {
+            font-size: 30px;
+        }
+
+        &--item {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            color: blue;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+
+            &:hover {
+                transition: all 0.2s ease-in-out;
+                font-size: 110%;
+                color: white;
+                background-color: blue;
+                border: 2px solid white;
+            }
+        }
+
+        &--icon {
+            margin-right: 10px;
+        }
+    }
+}
